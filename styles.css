@@ -1,0 +1,61 @@
+body {
+  background:linear-gradient(to left,#c73b3b,#0a0303,#827474);
+}
+.text-center {
+  text-align: center;
+}
+.header-wrapper {
+  border: 2px solid #ccc;
+  border-radius: 10px 0px;
+  background: transparent;
+  transition: background 1s ease-in;
+  animation: appear 1s;
+}
+.header-wrapper:hover {
+  background: #00bafff5;
+}
+.header {
+  color: #fff;
+}
+.main-container {
+  width: 550px;
+  height: 140px;
+  background: linear-gradient(to left,#c14848,#95bdba);
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 20px;
+}
+.authorBox {
+  float: right;
+  font-size:20px;
+}
+.authorBox .dash,.authorBox .authorName{
+  display: inline;
+}
+.button-wrapper {
+  position:absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%,-80%);
+}
+button {
+  background: #0a0a0a;
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid #0af37273;
+  padding: 8px;
+}
+.inner-container {
+  font-size: 25px;
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
